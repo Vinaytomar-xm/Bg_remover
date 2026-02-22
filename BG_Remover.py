@@ -24,8 +24,8 @@ st.markdown("""
     .footer {
     text-align: center;
     color: #6e7681;
-    font-size: 12px;
-    margin-top: 30px;
+    font-size: 17px;
+    margin-top: 170px;
 }   
 </style>
 """, unsafe_allow_html=True)
@@ -92,4 +92,5 @@ st.markdown(
     "<div class='footer'>@ 2026 Built with ❤️ Vinay Singh Tomar</div>",
     unsafe_allow_html=True
 )
+
 
