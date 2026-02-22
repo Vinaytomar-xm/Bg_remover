@@ -81,3 +81,8 @@ if uploaded_file:
             file_name="background_removed.png",
             mime="image/png"
         )
+
+st.markdown(
+    "<div class='footer'>@ 2026 Built with ❤️ Vinay Singh Tomar</div>",
+    unsafe_allow_html=True
+)
