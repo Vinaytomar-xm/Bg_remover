@@ -39,7 +39,7 @@ uploaded_file = st.file_uploader(
     "📤 Upload an image",
     type=["png", "jpg", "jpeg", "webp"]
 )
-st.warning("⚠️ Large images may take longer to process. Please be patient ⏳")
+st.warning("Please upload a file ⚠️ Large images may take longer to process. Please be patient ⏳")
 
 if uploaded_file:
     image = Image.open(uploaded_file)
@@ -55,6 +55,10 @@ if uploaded_file:
         st.info("Click **Remove Background** to process")
 
     st.markdown("---")
+
+     
+    if uploaded_file.type not in ["image/png", "image/jpeg", "image/jpg", "image/webp"]:
+        st.info("Please upload a suitable image (PNG, JPG, or WebP) to see the magic happen! 🚀")
 
     # ---------------- REMOVE BUTTON ----------------
     if st.button("🚀 Remove Background ", type="primary", use_container_width=True):
@@ -92,5 +96,6 @@ st.markdown(
     "<div class='footer'>@ 2026 Built with ❤️ Vinay Singh Tomar</div>",
     unsafe_allow_html=True
 )
+
 
 
